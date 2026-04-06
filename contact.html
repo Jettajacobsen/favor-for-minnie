@@ -219,10 +219,29 @@
     main { padding: 120px 24px 60px; }
   }
   @media (max-width: 700px) {
-    header { padding: 18px 20px; }
-    header.scrolled { padding: 14px 20px; }
-    header nav ul { gap: 18px; }
-    .row { grid-template-columns: 1fr; }
+    header { padding: 16px 18px; }
+    header.scrolled { padding: 12px 18px; }
+    header .brand { font-size: 18px; }
+    header nav ul { gap: 16px; }
+    header nav a { font-size: 12px; }
+    header .ig { width: 20px; height: 20px; }
+    main { padding: 100px 18px 40px; }
+    .row { grid-template-columns: 1fr; gap: 22px; }
+    form { gap: 22px; }
+    .contact h1 { margin-bottom: 24px; }
+    .contact .meta { margin-top: 40px; }
+    button[type="submit"] {
+      width: 100%;
+      align-self: stretch;
+      padding: 16px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 420px) {
+    header .brand { font-size: 16px; }
+    header nav ul { gap: 12px; }
+    header nav a { font-size: 11px; letter-spacing: 0.04em; }
+    main { padding: 90px 16px 30px; }
   }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
