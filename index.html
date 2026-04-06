@@ -32,9 +32,9 @@
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
     padding: 24px 40px;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
@@ -52,12 +52,11 @@
     font-weight: 500;
     font-size: 26px;
     letter-spacing: 0.005em;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     white-space: nowrap;
+    text-align: center;
   }
   header nav.left { justify-self: start; }
+  header .ig { justify-self: end; }
   header .ig {
     display: inline-flex;
     align-items: center;
@@ -122,6 +121,8 @@
   .gallery img {
     width: 100%;
     height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
     display: block;
     cursor: zoom-in;
     transition: transform 0.7s var(--ease), opacity 0.9s var(--ease), filter 0.5s var(--ease);
@@ -339,20 +340,6 @@
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="portrait reveal">
-      <img src="images/ric/images.jpg" alt="Ric Cantor">
-    </div>
-    <div>
-      <div class="section-title reveal">About</div>
-      <h2 class="reveal">Ric Cantor</h2>
-      <div class="role reveal">Director &amp; Writer</div>
-      <p class="reveal">Ric Cantor is an award-winning director and writer of commercials, television and film. His credits include directing both seasons of cult BBC sketch show, Man Stroke Woman, starring Nick Frost (Shaun of the Dead, Hot Fuzz); writing on Da Ali G Show; and writing and directing the feature film, Suzie Gold.</p>
-      <p class="reveal">Ric has also directed commercials for a vast array of clients, including Mastercard, McDonalds, BMW, Ikea and Pepsi and has won a Gold Lion at Cannes, and several wins and nominations at D&amp;AD and The British Arrows.</p>
-      <p class="reveal">He sits on the board of ManifestWorks, an organization that connects people impacted by foster care, homelessness and incarceration with job opportunities in the film industry.</p>
-      <div class="locations reveal">Los Angeles · London</div>
-    </div>
-  </section>
 </main>
 
 <footer>Photography by Roger Davies</footer>
