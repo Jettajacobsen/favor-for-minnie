@@ -183,6 +183,23 @@
     filter: brightness(1.03) saturate(1.02);
   }
 
+  .gallery-cta {
+    text-align: center;
+    margin: 60px 0 20px;
+  }
+  .gallery-cta a {
+    display: inline-block;
+    padding: 16px 44px;
+    border: 1px solid var(--fg);
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    transition: background 0.4s var(--ease), color 0.4s var(--ease);
+  }
+  .gallery-cta a:hover { background: var(--fg); color: var(--bg); }
+
   /* Footer */
   footer {
     padding: 140px 40px 60px;
@@ -445,6 +462,10 @@
   <div class="feature reveal">
     <img src="images/RD_Cantor_0412_M.jpg" alt="Studio interior" loading="lazy" decoding="async">
     <img src="images/RD_Cantor_0891_v2_M.jpg" alt="Outdoor view" loading="lazy" decoding="async">
+  </div>
+
+  <div class="gallery-cta reveal">
+    <a href="/gallery">View Gallery</a>
   </div>
 </main>
 
